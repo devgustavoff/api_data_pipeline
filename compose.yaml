@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:18
+    container_name: weather_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USR: postgres
+      POSTGRES_PASSWORD: hakkjj97
+      POSTGRES_DB: weather
+    ports:
+      - 5433:5432
+    volumes:
+      - my-db-volume:/var/lib/postgresql
+
+volumes:
+  my-db-volume:
