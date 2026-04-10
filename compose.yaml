@@ -4,7 +4,7 @@ services:
     container_name: weather_postgres
     restart: unless-stopped
     environment:
-      POSTGRES_USR: postgres
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: hakkjj97
       POSTGRES_DB: weather
     ports:
